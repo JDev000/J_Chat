@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    overflow: hidden;
+    width: 90%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 800px;
+  }
+  
+  .chat-header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .chat-body {
+    height: 100%;
+    /* flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  
+  .chat-message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .chat-message-text {
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  
+  .user-message {
+    margin-left: auto;
+    width: auto;
+  }
+  
+  .user-message .chat-message-text {
+    width: fit-content;
+    background-color: #1abc9c;
+    color: #fff;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top-right-radius: 0;
+  }
+  
+  .bot-message .chat-message-text {
+    background-color: #f2f2f2;
+    color: #333;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    border-top-left-radius: 0;
+  }
+  
+  .chat-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  
+  #user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  #send-button {
+    height: 100%;
+    width: 20%;
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+  }  
+
+  span{
+    color: #1abc9c;
+  }
