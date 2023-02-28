@@ -2,7 +2,7 @@ const chatBody = document.querySelector('.chat-body');
 const userInput = document.getElementById('user-input');
 const sendButton = document.getElementById('send-button');
 
-const openaiApiKey = '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';
+const openaiApiKey = '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';
 
 const generateChatbotResponse = async (userMessage) => {
   const prompt = `User: ${userMessage}\nChatbot: `;
